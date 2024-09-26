@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "6edb40c8-aa99-470a-bafc-dc1c5bc70e8d",
+		"name": "WeatherData",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32935167"
+	},
+	"item": [
+		{
+			"name": "GetWeatherData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=5b9fa529477b82d43591435d5cdb46a3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "44.34"
+						},
+						{
+							"key": "lon",
+							"value": "10.99"
+						},
+						{
+							"key": "appid",
+							"value": "5b9fa529477b82d43591435d5cdb46a3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetWeatherData",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=5b9fa529477b82d43591435d5cdb46a3",
+							"protocol": "https",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.34"
+								},
+								{
+									"key": "lon",
+									"value": "10.99"
+								},
+								{
+									"key": "appid",
+									"value": "5b9fa529477b82d43591435d5cdb46a3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Sep 2024 14:48:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "520"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/weather?lat=44.34&lon=10.99"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"coord\": {\n        \"lon\": 10.99,\n        \"lat\": 44.34\n    },\n    \"weather\": [\n        {\n            \"id\": 804,\n            \"main\": \"Clouds\",\n            \"description\": \"overcast clouds\",\n            \"icon\": \"04d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 291.68,\n        \"feels_like\": 291.34,\n        \"temp_min\": 288.08,\n        \"temp_max\": 292.71,\n        \"pressure\": 1010,\n        \"humidity\": 67,\n        \"sea_level\": 1010,\n        \"grnd_level\": 944\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 3.16,\n        \"deg\": 211,\n        \"gust\": 8.11\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1727189096,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2004688,\n        \"country\": \"IT\",\n        \"sunrise\": 1727154344,\n        \"sunset\": 1727197812\n    },\n    \"timezone\": 7200,\n    \"id\": 3163858,\n    \"name\": \"Zocca\",\n    \"cod\": 200\n}"
+				}
+			]
+		}
+	]
+}
